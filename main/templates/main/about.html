@@ -1,12 +1,12 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Про нас {% endblock %}
+{% block title %} {{ title }} {% endblock %}
 
 {% block content %}
 <div class="features">
-    <h1>Про нас</h1>
+    <h1>{{ title }}</h1>
     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tempore quam harum consequatur dolorum fugiat reiciendis ducimus natus temporibus neque optio quia suscipit doloremque qui, unde eaque eius quos voluptatum!
+        Этот сайт мой практический урок по джанго, сделал как смог. Меня зовут Эрлан Акылбеков, мне 26 лет, живу в Кыргызстане город Бишкек. На данный момент прохожу курсы по программированию) 
     </p>
     <a href="{% url 'home' %}"><button class="btn btn-danger">На Главную</button></a>
 </div>

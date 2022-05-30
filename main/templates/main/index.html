@@ -1,11 +1,15 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Главная страница</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga suscipit amet, aspernatur dolores quasi fugit facilis dolorum eius aliquid consequuntur, vitae, numquam labore corporis praesentium excepturi. Voluptatem delectus aspernatur deserunt.</p>
+        <h1>{{ title }}</h1>
+        <h2>Простой Новостной сайт</h2><br>
+        <h5>Полность реализован CRUD </h5><br>
+        <h5>Используется База postgresql</h5><br>  
         <a href="{% url 'about' %}"><button class="btn btn-warning">На страницу про нас</button></a>
+        <a href="{% url 'news_home' %}"><button class="btn btn-warning">Новости</button></a>
+
     </div>
 {% endblock %}
